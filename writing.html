@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+</style>
+</head>
+<title>Chase Browning</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="stylehomepage.css">
+
+<body>
+
+<button onclick="typeWriter()">About</button>
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'writing essays, producing audio, reading books 2018';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+
+
+</body>
+</html>
