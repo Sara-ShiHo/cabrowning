@@ -2,19 +2,11 @@
 * {
     box-sizing: border-box;
 }
-<!--
+
 body {
-  font: normal 100% "trebuchet ms", Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
-a {
-  color: #000000;
-}
-A:visited {
-  color: #005177;
-}
-a:hover {
-  color: #005177;
-}-->
 
 /* Style the header */
 .header {
