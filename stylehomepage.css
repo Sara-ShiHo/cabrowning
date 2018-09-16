@@ -26,7 +26,6 @@ body {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
-  font-family: Georgia, serif
   color: #818181;
   display: block;
   border: none;
@@ -39,7 +38,7 @@ body {
 
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
-  color: #f1f1f1;
+  color: #FEFEFE;
 }
 
 /* Add an active class to the active dropdown button */
@@ -51,7 +50,7 @@ body {
 /* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
 .dropdown-container {
   display: none;
-  background-color: #262626;
+  background-color: #FEFEFE;
   padding-left: 8px;
 }
 
