@@ -42,13 +42,6 @@ body {
   color: #f1f1f1;
 }
 
-/* Main content */
-.main {
-  margin-left: 200px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
 /* Add an active class to the active dropdown button */
 .active {
   background-color: green;
@@ -82,25 +75,5 @@ body {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
-
-
-
-<script>
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}
-</script>
 
 </style>
