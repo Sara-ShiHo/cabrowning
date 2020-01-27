@@ -55,6 +55,8 @@ ul {
   padding: 0px 10px 100px;
   color: rgb(114, 114, 114);
 }
+
+/* -- Scrolling classes -- */
 .main#Top {
   padding: 0px 10px 10px;
 }
@@ -64,6 +66,7 @@ ul {
 .main#Fiction {
   padding: 0px 10px 10px;
 }
+
 
 ul.mainlist {
   list-style-type: disc !important;
@@ -76,4 +79,13 @@ ul.mainlist {
 
 li.mainitem {
   margin: 0 0 10px 0;
+}
+
+/* -- long text -- */
+.longtext {
+  padding: 10px 200px 10px 10px;
+}
+
+div.c {
+  text-indent: 30%;
 }
