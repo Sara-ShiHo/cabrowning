@@ -67,7 +67,6 @@ ul {
   padding: 0px 10px 10px;
 }
 
-
 ul.mainlist {
   list-style-type: disc !important;
   display: block;
@@ -86,6 +85,13 @@ li.mainitem {
   padding: 10px 200px 10px 10px;
 }
 
-div.c {
-  text-indent: 30%;
+.headerimg {
+  position: relative;
+  top: 0px;
+  width: 100%;
+}
+#headerimg {
+  position: relative;
+  top: 0px;
+  padding: 0px;
 }
