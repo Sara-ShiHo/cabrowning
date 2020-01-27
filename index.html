@@ -6,51 +6,51 @@
 <title>Chase A. Browning</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="stylehomepage.css">
+<link rel="stylesheet" type="text/css" href="assets/css/stylehomepage.css">
 
 <body>
 
-<div class="sidenav">
-  <a href="index.html">Home</a>
-  <a href="writing.html">Writing</a>
-	<button class="dropdown-btn">Audio</button>
-	<i class="fa fa-caret-down"></i>
-	</button>
-	  <div class="dropdown-container">
-	    <a href="On My Honor.html">On My Honor</a>
-	    <a href="The Bliss Chamber.html">The Bliss Chamber</a>
-	  </div>
-  <a href="reading.html">Reading</a>
-  <a href="more.html">More</a>
-</div>
-
+<!-- Start of navbar -->
+<nav class="navbar navbar-default">
+  <!-- Collect the nav links, forms, and other content for toggling -->
+    <ul class="mainmenu">
+      <div class="homelink">
+        <li><a href="index.html">Home</a></li>
+      </div>
+      <li><a href="audio.html">Audio</a></li>
+      <li><a href="writing.html">Writing</a></li>
+      <li><a href="audio.html">Reading</a></li>
+    </ul>
+</nav>
+<!-- End of navbar -->
 
 <div class="main">
   <h2>Chase A. Browning</h2>
 </div>
 
 
-<script>
-/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}
-</script>
-
 
 </body>
+<script>
 
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
-
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 </html>
