@@ -31,3 +31,14 @@ img.rightimg {
   top: 10px;
   padding: 10px;
 }
+
+/* -- Media query for filling the screen -- */
+@media screen and (max-width: 700px) {	
+  /* -- long text -- */
+  .longtext {
+    padding: 5px 5px 5px 5px;
+  }
+  .main#main {
+    max-width: 100%;
+  }  
+}
