@@ -6,31 +6,41 @@
 <title>Chase A. Browning</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- Boostrap Stylesheet -->
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-<link rel="stylesheet" type="text/css" href="/assets/css/stylehomepage.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/stylehome.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/stylenavbar.css">
+<script src="/assets/js/nav.js"></script>
 
 <link rel="icon" href="/assets/icons/icons8-books-26.png">
 </head>
 
 <body>
-
+	
 <!-- Start of navbar -->
-<nav class="navbar navbar-default">
-  <!-- Collect the nav links, forms, and other content for toggling -->	
+<nav class="navbar" id="navbarDefault">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	
 	<ul class="mainmenu">
 		<li><a href="../">Home</a></li>
 		<li><a href="/audio/">Audio</a></li>	
 		<li><a href="/writing/">Writing</a></li>
 	</ul>
+
 	<ul class="emphasizemenu">
 		<li><a href="">Reading</a></li>	
 	</ul>
+
+	<!-- Start of footer -->
+	<div id="footer">
+		<p> &copy; CA Browning 2020 | <a href="https://github.com/Sara-ShiHo">Design</a> </p>
+	</div>
+	<!-- End of footer -->
 </nav>
 <!-- End of navbar -->
 
-<!-- Start of container -->
-<div class="container-fluid main">
+<div class="main" id="main">
+  <!-- Show navbar button -->
+  <button class="openbtn" id="openbtn" onclick="openNav()">&#9776;</button>
+
 	<h3>Read lists</h3>
 	<ul>
 		<li><a href="books_not_to_be_forgotten/">Books Not to be Forgotten (2010-2020)</a></li>
@@ -42,18 +52,8 @@
 	</ul>
 </div>
 
-<div class="rightimg">
-	<img src="/assets/images/reading_main.JPG" alt="NYCPL_image">
+<div class="main">
+	<img src="/assets/images/reading_main.JPG" alt="NYCPL_image" class="rightimg">
 </div>
-
-<!-- Start of footer -->
-<footer class="footer">
-	<p>
-		&copy;
-	</p>
-</footer>
-	<!-- End of footer -->
-</body>
-
 
 </html>

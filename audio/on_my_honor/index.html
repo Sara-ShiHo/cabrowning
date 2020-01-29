@@ -6,29 +6,41 @@
 <title>Chase A. Browning</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="/assets/css/stylehomepage.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/stylepage.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/stylenavbar.css">
+<script src="/assets/js/nav.js"></script>
+
 <link rel="icon" href="/assets/icons/icons8-books-26.png">
 </head>
 
 <body>
-
+	
 <!-- Start of navbar -->
-<nav class="navbar navbar-default">
-  <!-- Collect the nav links, forms, and other content for toggling -->	
+<nav class="navbar" id="navbarDefault">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	
 	<ul class="mainmenu">
-		<li><a href="./">Home</a></li>
+		<li><a href="../../">Home</a></li>
 	</ul>
- 	<ul class="emphasizemenu">
+	<ul class="emphasizemenu">
 		<li><a href="/audio/">Audio</a></li>	
 	</ul>
 	<ul class="mainmenu">
 		<li><a href="/writing/">Writing</a></li>
 		<li><a href="/reading/">Reading</a></li>	
-	</ul>
+  </ul>
+  
+  <!-- Start of footer -->
+	<div id="footer">
+		<p> &copy; CA Browning 2020 | <a href="https://github.com/Sara-ShiHo">Design</a> </p>
+	</div>
+	<!-- End of footer -->
 </nav>
 <!-- End of navbar -->
 
-<div class="main">
+<div class="main" id="main top">
+  <!-- Show navbar button -->
+  <button class="openbtn" id="openbtn" onclick="openNav()">&#9776;</button>
 
 	<p>This is On My Honor, a mini-series consisting of interviews and research done in 2017 that takes a hard look into the history of academic and personal integrity at UVA. The Honor Code is a pledge by which which all students swear on our honor, not to lie, cheat, or steal while at the University. This code has been part of the University for nearly all of its 200-year history.  These interviews will reveal that UVA’s perception of honor may be an illusion – that maybe we’re not living in the honorary academic sphere we think we are. </p>
 
@@ -41,7 +53,7 @@
 	</audio>
 
 	<p>Ep.1: On My Honor</p>
-	<p><a href="" target="_blank">link to transcript</a></p>
+	<!-- <p><a href="" target="_blank">link to transcript</a></p> -->
 
 	<audio controls>
 	  <source src="resources/01_Final_mixdown_On_my_Honor.mp3" type="audio/mp3">

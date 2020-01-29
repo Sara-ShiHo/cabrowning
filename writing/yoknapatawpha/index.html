@@ -6,28 +6,46 @@
 <title>Chase A. Browning</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="/assets/css/stylelistpage.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/stylepage.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/stylenavbar.css">
+<script src="/assets/js/nav.js"></script>
+
 <link rel="icon" href="/assets/icons/icons8-books-26.png">
 </head>
 
 <body>
-
+	
 <!-- Start of navbar -->
-<nav class="navbar navbar-default">
-  <!-- Collect the nav links, forms, and other content for toggling -->	
+<nav class="navbar" id="navbarDefault">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	
 	<ul class="mainmenu">
 		<li><a href="../../">Home</a></li>
-        <li><a href="/audio/">Audio</a></li>
-    </ul>	
-    <ul class="emphasizemenu">
-        <li><a href="/writing/">Writing</a></li>
-	</ul>
-    <ul class="mainmenu">
+    <li><a href="/audio/">Audio</a></li>	
+  </ul>
+  
+  <ul class="emphasizemenu">
+		<li><a href="/writing/">Writing</a></li>
+  </ul>
+  
+	<ul class="mainmenu">
 		<li><a href="/reading/">Reading</a></li>	
-	</ul>
+  </ul>
+  
+  <!-- Start of footer -->
+	<div id="footer">
+		<p> &copy; CA Browning 2020 | <a href="https://github.com/Sara-ShiHo">Design</a> </p>
+	</div>
+	<!-- End of footer -->
 </nav>
 <!-- End of navbar -->
+
+
+
 <div class="main" id="headerimg">
+
+  <button class="openbtn" id="openbtn" onclick="openNav()">&#9776;</button>
+
   <h1>Immersion and Enchantment in Faulkner’s Yoknapatawpha County</h1>
 </div>
 

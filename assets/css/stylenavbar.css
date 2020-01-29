@@ -1,0 +1,95 @@
+
+/* -- Fixed sidenav, full height -- */
+.navbar {
+  display: block;
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FEFEFE;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+ul {
+  list-style: none;
+  padding-inline-start: 0px;
+  margin: 0px;
+}
+.mainmenu a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #FEFEFE;
+  color: rgb(114, 114, 114);
+}
+.emphasizemenu a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  background-color: rgb(230, 230, 230);
+  color: rgb(114, 114, 114);
+}
+.mainmenu a:hover {
+  background-color: rgb(230, 230, 230);
+  color: rgb(114, 114, 114);
+}
+
+/* -- Footer -- */
+#footer {
+  position: absolute;
+  bottom: 0px;
+  padding: 5px;
+}
+
+#footer p {
+  font-size: 12px;
+  color: rgb(114, 114, 114);
+}
+
+/* -- Do not show open and close buttons on regular screen -- */
+.openbtn {
+  display:none;
+}
+.closebtn {
+  display:none;
+}
+
+/* -- Media query for navbar -- */
+@media screen and (max-width: 700px) {	
+  .navbar {
+    transition: 0.5;
+    width: 0;
+  }
+  .main {
+    margin-left: 0px;
+  }
+
+  /* -- Open navbar -- */
+  .openbtn {
+    display:block;
+    color: rgb(114, 114, 114);
+    background-color: rgb(230, 230, 230);
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+  }
+  .openbtn:hover {
+    cursor: pointer;
+  }
+
+  /* -- Close navbar -- */
+  .navbar .closebtn {
+    display: block;
+    position: relative;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(114, 114, 114);
+  }
+  .navbar .closebtn:hover {
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
+  }
+}

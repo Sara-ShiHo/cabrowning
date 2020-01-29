@@ -6,27 +6,41 @@
 <title>Chase A. Browning</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="/assets/css/stylelistpage.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/stylepage.css">
+<link rel="stylesheet" type="text/css" href="/assets/css/stylenavbar.css">
+<script src="/assets/js/nav.js"></script>
+
 <link rel="icon" href="/assets/icons/icons8-books-26.png">
 </head>
 
 <body>
-
+	
 <!-- Start of navbar -->
-<nav class="navbar navbar-default">
-  <!-- Collect the nav links, forms, and other content for toggling -->	
+<nav class="navbar" id="navbarDefault">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	
 	<ul class="mainmenu">
 		<li><a href="../../">Home</a></li>
 		<li><a href="/audio/">Audio</a></li>	
-    <li><a href="/writing/">Writing</a></li>
-	</ul>
-  <ul class="emphasizemenu">
+		<li><a href="/writing/">Writing</a></li>
+  </ul>
+  
+	<ul class="emphasizemenu">
 		<li><a href="/reading/">Reading</a></li>	
-	</ul>
+  </ul>
+  
+  <!-- Start of footer -->
+	<div id="footer">
+		<p> &copy; CA Browning 2020 | <a href="https://github.com/Sara-ShiHo">Design</a> </p>
+	</div>
+	<!-- End of footer -->
 </nav>
 <!-- End of navbar -->
 
-<div class="main" id="Top">
+<div class="main" id="main top">
+  <!-- Show navbar button -->
+  <button class="openbtn" id="openbtn" onclick="openNav()">&#9776;</button>
+
   <h1>Books Not to be Forgotten: 2010—2020</h1>
   <h4>(inspired by Sandy)</h4>
   <p>This ongoing list is a collection of books, fiction and non-fiction, I have read over the past decade. Inspired by Sandy McAdams, owner of Daedalus Books in Charlottesville, VA, who keeps a hand-written list of books that are 'Not necessarily recommendations, but are not to be forgotten.' Featured up top in name only is The New Yorker magazine, which I have continually subscribed to since April 2018.</p>

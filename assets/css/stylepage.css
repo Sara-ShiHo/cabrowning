@@ -1,58 +1,16 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
 	font-family: Georgia, serif
 }
 
-/* -- Fixed sidenav, full height -- */
-
-.navbar {
-  height: 100%;
-  width: 100px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #FEFEFE;
-  overflow-x: hidden;
-  font-size: 18x;
-  padding-top: 20px;
-}
-
-ul {
-  list-style: none;
-  padding-inline-start: 0px;
-  margin: 0px;
-}
-
-.mainmenu a {
-  display: block;
-  text-decoration: none;
-  padding: 10px;
-  background-color: #FEFEFE;
-  color: rgb(114, 114, 114);
-}
-
-.emphasizemenu a {
-  display: block;
-  text-decoration: none;
-  padding: 10px;
-  background-color: rgb(230, 230, 230);
-  color: rgb(114, 114, 114);
-}
-
-.mainmenu a:hover {
-  background-color: rgb(230, 230, 230);
-  color: rgb(114, 114, 114);
-}
-
 /* -- Main content -- */
 .main {
   margin-left: 100px; /* Same as the width of the sidenav */
   font-size: 17px; /* Increased text to enable scrolling */
-  padding: 0px 10px 100px;
+  padding: 0px 10px;
   color: rgb(114, 114, 114);
 }
 
@@ -90,6 +48,7 @@ li.mainitem {
   top: 0px;
   width: 100%;
 }
+
 #headerimg {
   position: relative;
   top: 0px;
