@@ -54,3 +54,12 @@ li.mainitem {
   top: 0px;
   padding: 0px;
 }
+
+
+/* -- Media query for filling the screen -- */
+@media screen and (max-width: 700px) {	
+  /* -- long text -- */
+  .longtext {
+    padding: 5px 5px 5px 5px;
+  }
+}
