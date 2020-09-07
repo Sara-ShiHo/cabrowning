@@ -3,70 +3,77 @@
 <html>
 
 <head>
-<title>Chase A. Browning</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="/assets/css/stylehome.css">
-<link rel="stylesheet" type="text/css" href="/assets/css/stylenavbar.css">
-<script src="/assets/js/nav.js"></script>
+	<title>Chase A. Browning</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../assets/css/stylehome.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/stylenavbar.css">
+	<script src="../assets/js/nav.js"></script>
 
-<link rel="icon" href="/assets/icons/icons8-books-26.png">
+	<link rel="icon" href="../assets/icons/icons8-books-26.png">
 </head>
 
 <body>
-	
-<!-- Start of navbar -->
-<nav class="navbar" id="navbarDefault">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-	<ul class="mainmenu">
-		<li><a href="../">Home</a></li>
-	</ul>
- 	<ul class="emphasizemenu">
-		<li><a href="">Audio</a></li>	
-	</ul>
-	<ul class="mainmenu">
-		<li><a href="/writing/">Writing</a></li>
-		<li><a href="/reading/">Reading</a></li>	
-	</ul>
+	<!-- Start of navbar -->
+	<nav class="navbar" id="navbarDefault">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-	<!-- Start of footer -->
-	<div id="footer">
-		<p> &copy; CA Browning 2020 | <a href="https://github.com/Sara-ShiHo">Design</a> </p>
+		<ul class="mainmenu">
+			<li><a href="../">Home</a></li>
+		</ul>
+		<ul class="emphasizemenu">
+			<li><a href="">Audio</a></li>
+		</ul>
+		<ul class="mainmenu">
+			<li><a href="../writing/">Writing</a></li>
+			<li><a href="../reading/">Reading</a></li>
+		</ul>
+
+		<!-- Start of footer -->
+		<div id="footer">
+			<p> &copy; CA Browning 2020 | <a href="https://github.com/Sara-ShiHo">Design</a> </p>
+		</div>
+		<!-- End of footer -->
+	</nav>
+	<!-- End of navbar -->
+
+
+	<div class="main" id="main">
+		<!-- Show navbar button -->
+		<button class="openbtn" id="openbtn" onclick="openNav()">&#9776;</button>
+
+		<h3>Originals:</h3>
+		<ul>
+			<li><a href="on_my_honor/">On My Honor</a></li>
+			<li><a href="the_bliss_chamber/">The Bliss Chamber</a></li>
+		</ul>
+
+		<h3>As producer & editor:</h3>
+		<ul>
+			<li>UVA Stories: (<a href="https://uvastories.org/" target=_blank>https://uvastories.org/</a>) |
+				(<a href="https://soundcloud.com/wtju/sets/uva-stories)"
+					target=_blank>https://soundcloud.com/wtju/sets/uva-stories)</a></li>
+			<li>College Fellows Audio Library: (<a
+					href="https://pages.shanti.virginia.edu/CF_Audio_Library/the-podcasts/)"
+					target=_blank>https://pages.shanti.virginia.edu/CF_Audio_Library/the-podcasts/</a>)</li>
+		</ul>
+
+		<h3>As producer & editor & interviewer:</h3>
+		<ul>
+			<li>Arts on Grounds Season 1: (<a href="https://soundcloud.com/wtju/sets/arts-on-grounds"
+					target=_blank>https://soundcloud.com/wtju/sets/arts-on-grounds</a>)</li>
+			<li>Arts on Grounds Season 2: (<a href="https://soundcloud.com/wtju/sets/arts-on-grounds-season-2"
+					target=_blank>https://soundcloud.com/wtju/sets/arts-on-grounds-season-2</a>)</li>
+			<li>WTJU Celebrates 60 Years: (<a href="https://soundcloud.com/wtju/sets/wtju-celebrates-60-years"
+					target=_blank>https://soundcloud.com/wtju/sets/wtju-celebrates-60-years</a>)</li>
+		</ul>
 	</div>
-	<!-- End of footer -->
-</nav>
-<!-- End of navbar -->
 
-
-<div class="main" id="main">
-  <!-- Show navbar button -->
-  <button class="openbtn" id="openbtn" onclick="openNav()">&#9776;</button>
-
-	<h3>Originals:</h3>
-	<ul>
-		<li><a href="on_my_honor/">On My Honor</a></li>
-		<li><a href="the_bliss_chamber/">The Bliss Chamber</a></li>	
-	</ul>
-
-	<h3>As producer & editor:</h3>
-	<ul>
-		<li>UVA Stories: (<a href="https://uvastories.org/" target=_blank>https://uvastories.org/</a>) | 
-			(<a href="https://soundcloud.com/wtju/sets/uva-stories)" target=_blank>https://soundcloud.com/wtju/sets/uva-stories)</a></li>
-		<li>College Fellows Audio Library: (<a href="https://pages.shanti.virginia.edu/CF_Audio_Library/the-podcasts/)" target=_blank>https://pages.shanti.virginia.edu/CF_Audio_Library/the-podcasts/</a>)</li>
-	</ul>
-
-	<h3>As producer & editor & interviewer:</h3>
-	<ul>
-		<li>Arts on Grounds Season 1: (<a href="https://soundcloud.com/wtju/sets/arts-on-grounds" target=_blank>https://soundcloud.com/wtju/sets/arts-on-grounds</a>)</li>
-		<li>Arts on Grounds Season 2: (<a href="https://soundcloud.com/wtju/sets/arts-on-grounds-season-2" target=_blank>https://soundcloud.com/wtju/sets/arts-on-grounds-season-2</a>)</li>
-		<li>WTJU Celebrates 60 Years: (<a href="https://soundcloud.com/wtju/sets/wtju-celebrates-60-years" target=_blank>https://soundcloud.com/wtju/sets/wtju-celebrates-60-years</a>)</li>
-	</ul>
-</div>
-
-<div class="main">
-	<img src="/assets/images/audio_main.jpg" alt="radio_image" class="rightimg">
-</div>
+	<div class="main">
+		<img src="../assets/images/audio_main.jpg" alt="radio_image" class="rightimg">
+	</div>
 
 </body>
+
 </html>
