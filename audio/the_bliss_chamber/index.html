@@ -3,54 +3,58 @@
 <html>
 
 <head>
-<title>Chase A. Browning</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="/assets/css/stylepage.css">
-<link rel="stylesheet" type="text/css" href="/assets/css/stylenavbar.css">
-<script src="/assets/js/nav.js"></script>
+	<title>Chase A. Browning</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/assets/css/stylepage.css">
+	<link rel="stylesheet" type="text/css" href="/assets/css/stylenavbar.css">
+	<script src="/assets/js/nav.js"></script>
 
-<link rel="icon" href="/assets/icons/icons8-books-26.png">
+	<link rel="icon" href="/assets/icons/icons8-books-26.png">
 </head>
 
 <body>
-	
-<!-- Start of navbar -->
-<nav class="navbar" id="navbarDefault">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	
-	<ul class="mainmenu">
-		<li><a href="../../">Home</a></li>
-	</ul>
-	<ul class="emphasizemenu">
-		<li><a href="/audio/">Audio</a></li>	
-	</ul>
-	<ul class="mainmenu">
-		<li><a href="/writing/">Writing</a></li>
-		<li><a href="/reading/">Reading</a></li>	
-  </ul>
-  
-  <!-- Start of footer -->
-	<div id="footer">
-		<p> &copy; CA Browning 2020 | <a href="https://github.com/Sara-ShiHo">Design</a> </p>
+
+	<!-- Start of navbar -->
+	<nav class="navbar" id="navbarDefault">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		<ul class="mainmenu">
+			<li><a href="../../">Home</a></li>
+		</ul>
+		<ul class="emphasizemenu">
+			<li><a href="/audio/">Audio</a></li>
+		</ul>
+		<ul class="mainmenu">
+			<li><a href="/writing/">Writing</a></li>
+			<li><a href="/reading/">Reading</a></li>
+		</ul>
+
+		<!-- Start of footer -->
+		<div id="footer">
+			<p> &copy; CA Browning 2020 | <a href="https://github.com/Sara-ShiHo">Design</a> </p>
+		</div>
+		<!-- End of footer -->
+	</nav>
+	<!-- End of navbar -->
+
+	<div class="main" id="main">
+		<!-- Show navbar button -->
+		<button class="openbtn" id="openbtn" onclick="openNav()">&#9776;</button>
+
+		<p>The Bliss Chamber is a narrative/sonic experiment, inviting you to imagine an environment in which your
+			problems have gone away, simply in virtue of your willful ignorance. To hear and to experience this
+			environment is my goal in this project, as well as to suggest why this approach is no longer sustainable.
+			Music by Jean Glas. </p>
+
+		<audio controls>
+			<source src="resources/The_Bliss_Chamber.mp3" type="audio/mp3">
+			Your browser does not support the audio element.
+		</audio>
+
 	</div>
-	<!-- End of footer -->
-</nav>
-<!-- End of navbar -->
-
-<div class="main" id="main">
-  <!-- Show navbar button -->
-  <button class="openbtn" id="openbtn" onclick="openNav()">&#9776;</button>
-
-	<p>The Bliss Chamber is a narrative/sonic experiment, inviting you to imagine an environment in which your problems have gone away, simply in virtue of your willful ignorance. To hear and to experience this environment is my goal in this project, as well as to suggest why this approach is no longer sustainable. Music by Jean Glas. </p>
-
-	<audio controls>
-	  <source src="audio/The_Bliss_Chamber.mp3" type="audio/mp3">
-	Your browser does not support the audio element.
-  </audio>
-  
-</div>
 
 
 </body>
+
 </html>
