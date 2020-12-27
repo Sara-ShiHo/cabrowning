@@ -14,6 +14,19 @@ body {
   color: rgb(114, 114, 114);
 }
 
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 3.3%;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* -- Scrolling classes -- */
 .main#Top {
   padding: 0px 10px 10px;
